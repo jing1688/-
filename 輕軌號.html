@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一日輕軌號通技術體驗</title>
+    <!-- 引入 Bootstrap CSS 和 Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="bg-tiffany text-white text-center py-3 mb-4 position-relative">
+        <h1 class="display-4">一日新北捷體驗--輕軌號通技術員篇 <i class="fas fa-subway small-icon"></i></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-tiffany mt-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#chiikawa"><i class="fas fa-tasks small-icon"></i> 主要職責</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule"><i class="fas fa-calendar-alt small-icon"></i> 一日行程</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#工作項目"><i class="fas fa-tools small-icon"></i> 工作項目</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="career mb-5 bg-light-tiffany p-3 rounded d-flex align-items-center" id="chiikawa">
+            <div class="text-container col-md-8">
+                <h2 class="display-5"><i class="fas fa-tasks small-icon"></i>&nbsp;主要職責</h2>
+                <p>號通技術員是掌管行車動線準時、安全的守護者。<br>
+                    號誌與通訊設備是列車行駛的依據，唯有系統正常運作，才能確保列車不會與其他列車或公路
+                    上的車輛產生衝突、危險；擁有暢通的通訊設備，
+                    才能將訊息即時且正確地傳遞給第一線人員。準
+                    時且安全地將每位乘客送達目的地！</p>
+                
+            </div>
+            <div class="image-container col-md-4">
+                <img src="image\輕軌土.png" alt="行車運轉異常狀況" class="img-fluid rounded">
+            </div>
+        </section>
+        <section class="schedule mb-5" id="schedule">
+            <h2 class="display-5"><i class="fas fa-calendar-alt small-icon"></i>&nbsp;一日行程</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><i class="bi bi-clock" style="color: #FFC107;"></i> 工作排程</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-light-tiffany">08:00-09:00 <br>設備監控 - 監控設備運作，即時處理突發狀況，依天候狀況及預定行程，確認預檢工項內容、開立表單</li>
+                        <li class="list-group-item bg-light-tiffany">09:00-11:00  <br>執行預檢項目1 - 軌旁設備巡檢(Tag、計軸器、Balise)、通訊機櫃清潔、檢查(Switch、Converter、Breaker)、轉轍器清潔保養(清潔、定位測試、零件檢查/更換)</li>
+                        <li class="list-group-item bg-light-tiffany">11:00-12:00  <br>執行預檢項目2 - 月台站體設備預檢(PIDS、TEL、CLS、行穿燈、到站燈)、號誌及通訊機櫃設備檢查、功能測試(PAS、WTU、UCS ACE、CTS)</li>
+                        <li class="list-group-item bg-light-tiffany">12:00-13:00  <br>中午休息</li>
+                        <li class="list-group-item bg-light-tiffany">13:00-14:00  <br>預檢工項結案 - 完成預檢表單、檢查表填寫，問題回報、紀錄</li>
+                        <li class="list-group-item bg-light-tiffany">14:00-15:00  <br>機房巡視、設備清點 - 至SER主機房確認設備運作、機房環境，施作工具設備清點、保養</li>
+                        <li class="list-group-item bg-light-tiffany">15:00-16:00  <br>廣告刊登 / 新人教育訓練 - PIDS及TMDS廣告排程、刊登，為培訓生進行教育訓練、QA解答</li>
+                        <li class="list-group-item bg-light-tiffany">16:00-17:00  <br>工作交接 / 安排次日工項 - 早班與午班工作事項及工具交接、值班日誌填寫，預先排定次日工項</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        
+        <style>
+            .time-box {
+                flex: 0 0 10%; /* Flexbox for responsive width */
+                text-align: center;
+            }
+            
+            .location-box {
+                flex: 0 0 40%; /* Increase width for more space */
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            
+            .task-box {
+                flex: 1; /* Takes up remaining space */
+            }
+            
+            .d-flex {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; /* Align items vertically */
+            }
+            .schedule .list-group-item.bg-light-tiffany {
+                background-color: #caeef1; /* 調整為稍微淺一點的顏色 */
+            }
+            </style>
+        <section class="job-attraction mb-5" id="工作項目" style="min-height: 90vh; display: flex; align-items: center;">
+            <h2 class="display-5 text-center"><i class="fas fa-briefcase small-icon"></i>&nbsp;工作項目</h2>
+            <div class="row w-100">
+                <!-- Left Top Block -->
+                <div class="col-md-12">
+                    <div class="content-box p-3 bg-light-tiffany rounded ml-2">
+                        <h3><i class="fas fa-star text-warning"></i> 轉轍器保養／查修：會車區的核心命脈
+                        </h3>
+                        <div class="image-container text-center ml-2">
+                            <img src="image2\轉轍器檢修.jpeg" alt="行車運轉異常狀況" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Top Block -->
+                <div class="col-md-12">
+                    <div class="content-box p-3 bg-light-tiffany rounded ml-2">
+                        <h3><i class="fas fa-star text-primary"></i> 戶外再熱，每個機櫃依然要確實開啟檢查/測試</h3>
+                        <div class="image-container text-center ml-2">
+                            <img src="image2\機櫃檢修.jpeg" alt="行車運轉異常狀況" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-12">
+                    <div class="content-box p-3 bg-light-tiffany rounded ml-2">
+                        <h3><i class="fas fa-star" style="color: #ff5733;"></i> <!-- 使用自定義顏色 --> 保護路線安全，有異常就要即時故障排除</h3>
+                        <div class="image-container text-center ml-2">
+                            <img src="image2\故障異常.jpeg" alt="行車運轉異常狀況" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    
+    
+    <footer class="bg-light text-center py-4">
+        <p>新北捷運 <i class="fas fa-train small-icon"></i></p>
+        <p>聯絡我們: <a href="mailto:contact@新北metro.tw">contact@新北metro.tw</a></p>
+    </footer>
+
+    <!-- 引入 Bootstrap JS 和依赖 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="chui1.js"></script>
+</body>
+</html>
