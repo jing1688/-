@@ -1,0 +1,85 @@
+.header {
+    background-image: url(https://th.bing.com/th/id/R.75cbf058c0e01cf26644228ff9b0e4ce?rik=Z4PtobBwaD8Q3A&riu=http%3a%2f%2fwww.indot.com.tw%2fwp-content%2fuploads%2fDSC04568-e1602570613601.jpg&ehk=f55unW7oyvKV3e27gAPsBGXgGmaG3OoGqt2E4GRuQw8%3d&risl=&pid=ImgRaw&r=0); /* 替換成你的圖片路徑 */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* 添加半透明黑色覆蓋層 */
+    z-index: 1;
+}
+
+.header h1,
+.header .description-box {
+    position: relative;
+    z-index: 2; /* 保證文字和白底在覆蓋層之上 */
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: white; /* 修改標題顏色 */
+    text-shadow: 
+        -1px -1px 0 #FF80B0,  
+        1px -1px 0 #FFFFFF,
+        -1px 1px 0 #FF80B0,
+        1px 1px 0 #FF80B0; /* 添加白色邊框 */
+}
+
+.description-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.content-section {
+    margin-bottom: 50px;
+}
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 50px; /* 與上一段增加空隙 */
+}
+.section-title .icon img {
+    width: 30px;
+    margin-right: 10px;
+}
+.card-text {
+    font-size: 1.2rem;
+}
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+.card-center {
+    display: flex;
+    justify-content: center;
+}
+.card-center .card {
+    margin: 0 auto;
+}
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+.card {
+    transition: border 0.3s ease;
+}
+.card:hover {
+    border: 2px solid #007bff; /* 更改为你喜欢的颜色 */
+}

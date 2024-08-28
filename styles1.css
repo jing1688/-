@@ -1,0 +1,134 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f9f9f9;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bg-tiffany {
+    background-color: #81D8D0 !important; /* Tiffany Blue */
+}
+
+.bg-light-tiffany {
+    background-color: rgba(129, 216, 208, 0.2); /* Tiffany Blue with light opacity */
+}
+
+header {
+    background-color: #81D8D0 !important; /* Tiffany Blue */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Enable absolute positioning of child elements */
+    padding-bottom: 50px; /* Ensure there's space for the intro container */
+}
+
+h1, h2, h3 {
+    font-size: 1.5rem; /* 調整標題字體大小 */
+}
+
+h1.display-4, h2.display-5 {
+    font-size: 2rem; /* 調整更大標題的字體大小 */
+}
+
+nav a {
+    font-size: 1.2rem; /* 調整導航字體大小 */
+}
+
+p {
+    font-size: 1.1rem; /* 調整段落字體大小 */
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    animation: slideIn 1s ease-out; /* 调整动画时间 */
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; } /* 增加偏移量以增强效果 */
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.career {
+    background-color: rgba(129, 216, 208, 0.2);
+}
+
+.list-group-item {
+    background-color: rgba(129, 216, 208, 0.2);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #81D8D0; /* Tiffany Blue */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.border-left {
+    border-left: 2px solid #006B6B; /* Custom border color */
+    padding-left: 15px;
+}
+
+.image-container {
+    height: 200px; /* 设置容器的固定高度 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* 如果图像超出容器大小，隐藏溢出的部分 */
+}
+
+.image-container img {
+    height: 100%; /* 确保图像至少有容器的高度 */
+    width: auto; /* 确保图像宽度自动调整，保持比例 */
+    object-fit: cover; /* 保持图像的宽高比，通过裁剪来填充整个容器 */
+}
+
+.intro-container {
+    width: 100%;
+    max-width: 600px; /* 你可以根据需要调整最大宽度 */
+    background-color: white;
+    color: black;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -25px; /* 调整负值以覆盖标题的一部分 */
+    border-radius: 5px;
+    z-index: 10;
+    position: relative; /* 保证其在导航栏之上 */
+}
+
+.small-icon {
+    font-size: 1em; /* 調整圖標大小 */
+}
+
+.questions .question-block {
+    transition: border 0.3s ease-in-out, padding 0.3s ease-in-out; /* 增加平滑的过渡效果 */
+}
+
+.questions .question-block:hover {
+    border: 2px solid #FFD700; /* 鼠标悬停时的边框颜色 */
+    padding: 10px; /* 边框内填充 */
+    border-radius: 5px; /* 边框圆角 */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); /* 可选：增加阴影效果 */
+}
+
+@media (max-width: 768px) {
+    .border-left {
+        border-left: none;
+        border-top: 2px solid #006B6B; /* Custom border color for small screens */
+        padding-left: 0;
+        padding-top: 15px;
+    }
+    .intro-container {
+        max-width: 90%;
+    }
+}
