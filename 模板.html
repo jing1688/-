@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>一日運務員體驗</title>
+    <style>
+        /* Modified styles with light blue and Tiffany color scheme */
+        #title-left {
+            float: left;
+            width: 40%;
+        }
+
+        #title-right {
+            float: right;
+            width: 60%;
+        }
+
+        body {
+            margin-left: 1cm;
+            margin-right: 2cm;
+            margin-top: 0.5cm;
+            margin-bottom: 2cm;
+            line-height: 150%;
+            font-family: sans-serif;
+            font-size: 14pt;
+            background-color: #E0F7FA; /* Light blue background */
+            color: #004D40; /* Darker teal color for text */
+        }
+
+        .table {
+            display: table;
+            border-collapse: separate;
+            border-spacing: 10px;
+            width: 100%;
+        }
+
+        .row {
+            display: table-row;
+            width: 100%;
+        }
+
+        h1 {
+            margin-left: 60pt;
+            margin-top: 20pt;
+            margin-bottom: 10pt;
+            padding-left: 50pt;
+            padding-top: 6pt;
+            padding-bottom: 6pt;
+            border-top: thin dashed #00ACC1; /* Tiffany color border */
+            border-left: thin dashed #00ACC1; /* Tiffany color border */
+            border-bottom: thin dashed #00ACC1; /* Tiffany color border */
+            font-family: sans-serif;
+            font-size: 12pt;
+            color: #00695C; /* Tiffany teal for heading */
+        }
+
+        h3 {
+            margin-top: 24pt;
+            padding-left: 40pt;
+            padding-top: 10pt;
+            padding-bottom: 10pt;
+            border-top: thin solid #00ACC1; /* Tiffany color border */
+            border-left: thin solid #00ACC1; /* Tiffany color border */
+            border-bottom: thin solid #00ACC1; /* Tiffany color border */
+            font-family: monospace;
+            font-size: 18pt;
+            color: #004D40; /* Darker teal color */
+        }
+
+        h2 {
+            margin-left: 1em;
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+            padding-left: 30pt;
+            padding-top: 8pt;
+            padding-bottom: 6pt;
+            border-top: thin solid #00ACC1; /* Tiffany color border */
+            border-left: thin solid #00ACC1; /* Tiffany color border */
+            border-bottom: thin solid #00ACC1; /* Tiffany color border */
+            border-right: thin solid #00ACC1; /* Tiffany color border */
+            font-family: sans-serif;
+            font-size: 14pt;
+            color: #004D40; /* Darker teal color */
+        }
+
+        .h2-short {
+            margin-left: 2em;
+            padding-left: 16pt;
+            padding-bottom: 4pt;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid #00ACC1; /* Tiffany color */
+        }
+
+        .h2-top {
+            margin-top: 1.2em;
+        }
+
+        .content-lv2 {
+            margin-left: 3em;
+            margin-right: 2em;
+        }
+
+        .lst-lv2 {
+            margin-left: 2em;
+            margin-right: 2em;
+        }
+
+        .h3-short {
+            margin-left: 4em;
+            padding-left: 16pt;
+            padding-bottom: 4pt;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid #00ACC1; /* Tiffany color */
+        }
+
+        .content-lv3 {
+            margin-left: 5em;
+            margin-right: 2em;
+        }
+
+        a {
+            color: #00796B; /* Tiffany teal for links */
+            text-decoration: none
+        }
+
+        a:link {
+            color: #00796B;
+        }
+
+        a:visited {
+            color: #00796B;
+        }
+
+        a:active {
+            color: #004D40;
+        }
+
+        a:hover {
+            color: #004D40;
+        }
+
+        .tab {
+            overflow: hidden;
+            border: 1px solid #00ACC1; /* Tiffany color border */
+            background-color: #B2EBF2; /* Lighter blue tab background */
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+
+        .close-button {
+            padding-top: 4pt;
+            padding-bottom: 4pt;
+            padding-left: 6pt;
+            padding-right: 6pt;
+            border: 1px solid #00ACC1; /* Tiffany color border */
+            background-color: #B2EBF2; /* Lighter blue background */
+            float: right;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            padding-left: 2em;
+            padding-right: 2em;
+            transition: 0.3s;
+            font-size: 17px;
+            color: #004D40; /* Darker teal color */
+        }
+
+        .tab button:hover {
+            background-color: #B2DFDB; /* Lighter teal on hover */
+        }
+
+        .tab button.active {
+            background-color: #80CBC4; /* Tiffany color for active tab */
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #00ACC1; /* Tiffany color border */
+            border-top: none;
+            margin-left: 1em;
+            margin-right: 1em;
+            padding-left: 1em;
+            padding-right: 2em;
+            padding-bottom: 3em;
+            background-color: #E0F7FA; /* Light blue background */
+        }
+
+        p.fancy img {
+            display: none;
+        }
+
+        p.fancy:hover img {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="margin-left: 2em;margin-right:1em">
+        <div id="title-left" align="left">
+            <font face="標楷體" size=5><b>一日運務員體驗</b></font>
+        </div>
+    </div>
+    <br>
+    <hr color="orange">
+    <p>
+
+        <table border="0" width="900" style="margin-left: 3em">
+
+            <tr>
+
+                <td width=150>
+                    <img src="image/uk97w4eo.png" width="220"></img>
+                </td>
+
+                <td width=420>
+                    <font size=4>
+                        <div style="margin-bottom:0.3em">一日新北捷體驗--運務員篇</div>
+                        <div style="line-height:1.3em;">
+                            <a href="https://www.cs.nctu.edu.tw/" target="_blank">新北捷運公司</a>,
+                        </div>
+                        <div style="margin-top:0.3em">
+                            新北市, 台灣.
+                        </div>
+
+                        <p>
+
+                        <p>
+
+                        <div style="line-height:1.5em;">
+                            Tel: 00-0000001 <br>
+                            Email: contact@新北metro.tw
+                        </div>
+                    </font>
+                </td>
+
+            </tr>
+
+        </table>
+
+        <hr color="brown" size="1" align="left">
+
+        <p>
+
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'About')" id="AboutTab">簡介</button>
+            <button class="tablinks" onclick="openTab(event, 'Responsibilities')" id="ResponsibilitiesTab">主要職責</button>
+            <button class="tablinks" onclick="openTab(event, 'Schedule')" id="ScheduleTab">一日行程</button>
+            <button class="tablinks" onclick="openTab(event, 'NightOperations')" id="NightOperationsTab">夜間作業補充</button>
+            <button class="tablinks" onclick="openTab(event, 'Questions')" id="QuestionsTab">Questions</button>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <span onclick="unclickAll();" class="close-button">x</span>
+            <br>
+
+            <h2 class="h2-short" style="margin-top:-0.6em; width:10.2em;">簡介</h2>
+
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                歡迎來到一日新北捷運體驗，這裡是運務員的體驗網站，您將了解運務員的職責以及工作一日的詳細內容。
+            </div>
+
+        </div>
+
+        <div id="Responsibilities" class="tabcontent">
+            <span onclick="unclickAll();" class="close-button">x</span>
+            <br>
+
+            <h2 class="h2-short" style="margin-top:-0.6em; width:10.2em;">主要職責</h2>
+
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <p>運務員主要負責車站、月台與捷運駕駛的大小事情。運務員的主要職責包括確保乘客的安全，確定車站的運作正常。</p>
+                <p>下面將會深入說明運務員忙碌的一天。</p>
+            </div>
+
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <img src="image/uk97w4eo.png" alt="行車運轉異常狀況" width="600"></img>
+            </div>
+        </div>
+
+        <div id="Schedule" class="tabcontent">
+            <span onclick="unclickAll();" class="close-button">x</span>
+            <br>
+
+            <h2 class="h2-short" style="margin-top:-0.6em; width:10.2em;">一日行程</h2>
+
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <h3><i class="bi bi-sun"></i> 早班</h3>
+                <ul class="lst-lv2">
+                    <li>6:30 交接 - 開始一天的活動！</li>
+                    <li>7:00 尖峰時段 </li>
+                    <li>9:00 尖峰結束輪休</li>
+                    <li>10:30 車站巡檢、臨時性調查 </li>
+                    <li>12:00 吃東西 </li>
+                    <li>13:00 例行性作業、每日例行表單回覆 </li>
+                    <li>14:00 下班交接</li>
+                </ul>
+                <h3><i class="bi bi-moon"></i> 小夜班</h3>
+                <ul class="lst-lv2">
+                    <li>14:20 交接 - 開始工作了</li>
+                    <li>15:00 車站巡檢</li>
+                    <li>16:00 輪休</li>
+                    <li>17:00 晚尖峰時段 </li>
+                    <li>19:00 吃東西</li>
+                    <li>20:00 例行性作業、臨時性調查 </li>
+                    <li>21:00 每日例行表單回覆 </li>
+                    <li>22:00 下班交接</li>
+                </ul>
+                <h3><i class="bi bi-stars"></i> 大夜班</h3>
+                <ul class="lst-lv2">
+                    <li>22:00 交接上工</li>
+                    <li>23:00 每日例行表單回單回覆</li>
+                    <li>00:00 末班車及車站關門作業</li>
+                    <li>01:00 夜間廠商進場</li>
+                    <li>02:00 廠商離場檢查作業</li>
+                    <li>03:00 車站巡檢 </li>
+                    <li>04:30 夜間巡軌 </li>
+                    <li>05:45 車站開門作業</li>
+                    <li>06:30 下班交接</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id="NightOperations" class="tabcontent">
+            <span onclick="unclickAll();" class="close-button">x</span>
+            <br>
+
+            <h2 class="h2-short" style="margin-top:-0.6em; width:10.2em;">夜間作業補充</h2>
+
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <div style="display: flex; justify-content: space-around;">
+                    <div style="text-align: center;">
+                        <img src="image/image 1.jpg" alt="車站定時需將自動售票機內之鈔票及硬幣進行抽桶、數幣處理作業" width="250"></img>
+                        <p>車站定時需將自動售票機內之鈔票及硬幣進行抽桶、數幣處理作業</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="image/image 2.jpg" alt="維修廠商進場施作依排程需下軌架設短路夾管控門禁及離場巡檢作業" width="250"></img>
+                        <p>維修廠商進場施作依排程需下軌架設短路夾管控門禁及離場巡檢作業</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="image/image 3.jpg" alt="夜間巡軌作業慢速巡檢軌道是否有遺落物品維護行車安全狀況" width="250"></img>
+                        <p>夜間巡軌作業慢速巡檢軌道是否有遺落物品維護行車安全狀況</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Questions" class="tabcontent">
+            <span onclick="unclickAll();" class="close-button">x</span>
+            <br>
+
+            <h2 class="h2-short" style="margin-top:-0.6em; width:10.2em;">Questions</h2>
+
+            <!-- Q1 Section -->
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <h3 class="question">Q1 車站可能會遇到哪些緊急事故？</h3>
+                <div style="display: flex; justify-content: space-around;">
+                    <div style="text-align: center; width: 30%;">
+                        <p>1.行車運轉異常狀況：像是旅客按到對講機、異物卡住車門等等，行控中心會請運務員上車確認狀況，並進行異常狀況處理程序。</p>
+                        <img src="image/image 4.png" alt="行車運轉異常狀況" width="100%">
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                        <p>2.電梯及電扶梯異常：當電扶梯異常停機 / 旅客自行按壓緊急停機鈕，詢問處收到警訊，運務員需至現場確認狀況，有旅客受傷需送醫就診，車站進行簡易包紮、CPR等處理。</p>
+                        <img src="image/image 5.png" alt="電梯及電扶梯異常狀況" width="100%">
+                    </div>
+                    <div style="text-align: center; width: 30%;">
+                        <p>3.車站發生火警訊號：確認月台大廳是否無煙無火，回報行控確認列車可以正常行駛至車站。(另確認電梯扶梯是否有人受困跌傷。)</p>
+                        <img src="image/image 6.jpg" alt="車站發生火警訊號" width="100%">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Q2 Section -->
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <h3 class="question">Q2 會不會遇到旅客有票證或其他事務的問題呢？</h3>
+                <p>會！ 比較常有加值、設定都會通、販售優惠單程票或者事情詢問、遺失物查詢等。有時候也會遇到車站設備異常，我們就要簡易排除問題(例: 自動售票機、閘門)</p>
+                <p>如果有視障 / 輪椅旅客或者團體旅客到來，我們也需要主動去引導他們。此外，還有一些比較罕見的事情，像是淹水的時候，我們就要去堆沙包和抽水</p>
+                <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                    <img src="image/water.png" alt="淹水處理" width="100%">
+                </div>
+            </div>
+
+            <!-- Q3 Section -->
+            <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                <h3 class="question">Q3 平常會不會有緊急情況的教育訓練呢？</h3>
+                <p>有的，我們為了提升安全意識，一直在努力。</p>
+                <p>像是我們有火災、急救、防颱防洪等等的訓練。我們會做火警程序演練，實際操作急救設備等等實際導向的練習。</p>
+                <p>在防汛期會進行防颱防洪設備溫故實地操作訓練<br><br></p>
+                <p>(下圖為空氣呼吸器介紹)</p>
+                <div class="content-lv2" style="margin-top:0.5em;line-height:1.5em;">
+                    <img src="image/rescue.png" alt="車站發生火警訊號" width="100%">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function unclickAll() {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+        }
+
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("AboutTab").click();
+    </script>
+
+</body>
+
+</html>
