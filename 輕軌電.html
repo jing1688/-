@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一日輕軌電機體驗</title>
+    <!-- 引入 Bootstrap CSS 和 Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="bg-tiffany text-white text-center py-3 mb-4 position-relative">
+        <h1 class="display-4">一日新北捷體驗--輕軌電機技術員篇 <i class="fas fa-subway small-icon"></i></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-tiffany mt-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#chiikawa"><i class="fas fa-tasks small-icon"></i> 主要職責</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule"><i class="fas fa-calendar-alt small-icon"></i> 一日行程</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#attitude"><i class="fas fa-tools small-icon"></i>技術員應具備的態度</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#電機新手包"><i class="fas fa-tools small-icon"></i>電機入門新手包</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="career mb-5 bg-light-tiffany p-3 rounded d-flex align-items-center" id="chiikawa">
+            <div class="text-container col-md-8">
+                <h2 class="display-5"><i class="fas fa-tasks small-icon"></i>&nbsp;主要職責</h2>
+                <p>輕軌電機技術員主要負責守護輕軌各車站設備安全。他們會在輕軌進行巡邏檢查，檢查變電站及車站設備是否有異常。此外他們還負責排程準備、教材和SOP製作與廠商接洽。</p>
+                <p>此職務對技術的學習需要時間消化，維持積極學習的態度是最重要的事！</p>
+            </div>
+            <div class="image-container col-md-4">
+                <img src="image/uk97w4eo.png" alt="行車運轉異常狀況" class="img-fluid rounded">
+            </div>
+        </section>
+        <section class="schedule mb-5" id="schedule">
+            <h2 class="display-5"><i class="fas fa-calendar-alt small-icon"></i>&nbsp;一日行程</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3><i class="bi bi-sun"  style="color: #FFC107;"></i> 早班</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-light-tiffany">07:00 上班 - 檢查當天巡檢項目</li>
+                        <li class="list-group-item bg-light-tiffany">07:30 工作準備 - 討論當天工作項目並印製巡檢表單</li>
+                        <li class="list-group-item bg-light-tiffany">08:30 開始工作 - 前往淡海輕軌各車站進行巡邏檢查</li>
+                        <li class="list-group-item bg-light-tiffany">12:00 午休 - 回到機廠用餐與休息</li>
+                        <li class="list-group-item bg-light-tiffany">13:30 表單整理、故障供單輸入系統、故障報修處理</li>
+                        <li class="list-group-item bg-light-tiffany">15:00 交班 - 工作移交給午班小組</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 border-left">
+                    <h3><i class="bi bi-clock" style="color: #FFC107;"></i> 午班</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-light-tiffany">15:00-15:30 與早班交接</li>
+                        <li class="list-group-item bg-light-tiffany">15:30-17:30 回復廠商及主管訊息</li>
+                        <li class="list-group-item bg-light-tiffany">17:30-18:30 晚餐時間</li>
+                        <li class="list-group-item bg-light-tiffany">18:30-22:00 準備排程所需工具及執行工作排程</li>
+                        <li class="list-group-item bg-light-tiffany">22:00-23:00 填寫工作日誌、保養工具及交接夜班</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <style>
+        .schedule .list-group-item.bg-light-tiffany {
+            background-color: #cef5fa; /* 調整為稍微淺一點的顏色 */
+        }
+        </style>
+    
+        <section id="attitude" class="content-section mb-5">
+            <h2 class="display-5 text-center">&nbsp;技術員應具備的態度</h2>
+            <div class="image-container">
+                <img src="image/attitude.png" alt="態度" class="img-fluid rounded">
+            </div>
+        </section>
+        
+        <style>
+            #night_operations {
+                display: flex;
+                flex-direction: column; /* 使 section 內的元素垂直排列 */
+                align-items: center;
+                justify-content: center;
+                min-height: 90vh; /* 使用視窗高度的 90% 作為 section 的最小高度 */
+                padding: 2rem; /* 增加內邊距 */
+            }
+        
+            #night_operations h2 {
+                margin-bottom: 2rem; /* 增加標題與圖片之間的距離 */
+                width: 100%;
+            }
+        
+            #night_operations .image-container {
+                flex-grow: 1; /* 讓圖片容器填滿剩餘空間 */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+        
+            #night_operations .image-container img {
+                max-width: 100%;
+                max-height: 100%; /* 確保圖片高度隨視窗大小改變 */
+                object-fit: contain; /* 保持圖片比例不變，避免裁切 */
+            }
+        </style>
+        <section id="電機新手包" class="content-section mb-5">
+            <h2 class="display-5 text-center">
+                <a href="https://docs.google.com/presentation/d/1J6JBtZ-PV4xr8PflYljkI02ohiInjeMwEQQXh_NthMY/edit#slide=id.g27ff0a91d08_0_0" target="_blank">
+                    <i class="fas fa-tools small-icon"></i>&nbsp;附錄：電機入門新手包
+                </a>
+            </h2>
+        </section> 
+         
+    </div>
+    <footer class="bg-light text-center py-4">
+        <p>新北捷運 <i class="fas fa-train small-icon"></i></p>
+        <p>聯絡我們: <a href="mailto:contact@新北metro.tw">contact@新北metro.tw</a></p>
+    </footer>
+
+    <!-- 引入 Bootstrap JS 和依赖 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="chui1.js"></script>
+</body>
+</html>
