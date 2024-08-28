@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一日輕軌車輛技術體驗</title>
+    <!-- 引入 Bootstrap CSS 和 Icons -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header class="bg-tiffany text-white text-center py-3 mb-4 position-relative">
+        <h1 class="display-4">一日新北捷體驗--輕軌車輛技術員篇 <i class="fas fa-subway small-icon"></i></h1>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-tiffany mt-3">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="#chiikawa"><i class="fas fa-tasks small-icon"></i> 主要職責</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule"><i class="fas fa-calendar-alt small-icon"></i> 一日行程</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#job-attraction"><i class="fas fa-tools small-icon"></i> 季檢工作項目</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#half-year-inspection"><i class="fas fa-comments small-icon"></i> 半年檢工作項目</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <section class="career mb-5 bg-light-tiffany p-3 rounded d-flex align-items-center" id="chiikawa">
+            <div class="text-container col-md-8">
+                <h2 class="display-5"><i class="fas fa-tasks small-icon"></i>&nbsp;主要職責</h2>
+                <p>車輛技術員平日在進行輕軌列車預防檢修檢查還有故障檢修，每月、季、半年、一年都有特定的檢查項目要負責。</p>
+                
+            </div>
+            <div class="image-container col-md-4">
+                <img src="image\輕軌土.png" alt="行車運轉異常狀況" class="img-fluid rounded">
+            </div>
+        </section>
+        <section class="schedule mb-5" id="schedule">
+            <h2 class="display-5"><i class="fas fa-calendar-alt small-icon"></i>&nbsp;一日行程</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><i class="bi bi-clock" style="color: #FFC107;"></i> 工作排程</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-light-tiffany">09:00 上班 - 勤前教育、當日檢查內容說明、準備預檢用之工具與物料</li>
+                        <li class="list-group-item bg-light-tiffany">09:30 進行預防檢修檢查 - 預檢團隊共同進行預檢項目(車內與車側為主)</li>
+                        <li class="list-group-item bg-light-tiffany">12:00 午休 - 工作告一個段落，整理工具，進行午休</li>
+                        <li class="list-group-item bg-light-tiffany">13:30 進行預防檢修檢查 - 預檢團隊共同進行預檢項目(車頂與車下坑道為主)</li>
+                        <li class="list-group-item bg-light-tiffany">15:45 進行夏季空調專案檢查</li>
+                        <li class="list-group-item bg-light-tiffany">17:00 收尾 - 收拾工具與廢棄物料、環境簡易清潔、進行出廠檢查、填報維修工單、準備隔日預檢車輛過往檢修資料</li>
+                        <li class="list-group-item bg-light-tiffany">18:00 下班 - 如果沒有其他問題，當日工作就已完成</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </section>
+        
+        <style>
+            .time-box {
+                flex: 0 0 10%; /* Flexbox for responsive width */
+                text-align: center;
+            }
+            
+            .location-box {
+                flex: 0 0 40%; /* Increase width for more space */
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            
+            .task-box {
+                flex: 1; /* Takes up remaining space */
+            }
+            
+            .d-flex {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; /* Align items vertically */
+            }
+            .schedule .list-group-item.bg-light-tiffany {
+                background-color: #caeef1; /* 調整為稍微淺一點的顏色 */
+            }
+            </style>
+        
+        <section class="job-attraction mb-5" id="job-attraction" style="min-height: 100vh; display: flex; align-items: center;">
+            <h2 class="display-5 text-center"><i class="fas fa-briefcase small-icon"></i>&nbsp;季檢工作項目</h2>
+            <div class="row w-100">
+                <!-- Left Top Block -->
+                <div class="col-md-6">
+                    <div class="content-box p-3 bg-light-tiffany rounded">
+                        <h3><i class="fas fa-star text-warning"></i> 量測車高</h3>
+                        <p>
+                            1. 使用兩水平長桿(方棍)橫跨軌面與車箱地板進行檢查。<br><br>
+                            2. 檢查位置：客室地板M1、M2、M4、M5車門處與軌面高度，標準高度為350mm。<br><br>
+                            3. M3模組車地板檢查：使用水平儀進行量測，標準為0°。
+                        </p>
+                        <div class="image-container text-center">
+                            <img src="image2\量測車高.jpeg" alt="行車運轉異常狀況" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Top Block -->
+                <div class="col-md-6 mb-4">
+                    <div class="content-box p-3 bg-light-tiffany rounded">
+                        <h3><i class="fas fa-star text-primary"></i> 面板檢查</h3>
+                        <p>駕駛室檢查，確認駕駛室各面板鎖固螺栓無鬆脫。</p>
+                    </div>
+                    <div class="image-container text-center">
+                        <img src="image2\季檢面板.jpeg" alt="行車運轉異常狀況" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="job-attraction mb-5" id="half-year-inspection" style="min-height: 100vh; display: flex; align-items: center;">
+            <div class="container">
+                <h2 class="display-5 text-center"><i class="fas fa-tools small-icon"></i>&nbsp;半年檢工作項目</h2>
+                <div class="row w-100">
+                    <!-- Left Top Block - 半年檢工作項目 -->
+                    <div class="col-md-6">
+                        <div class="content-box p-3 bg-light-tiffany rounded">
+                            <h3><i class="fas fa-star text-warning"></i> 車內裝置測試</h3>
+                            <p>
+                                緊急煞車手把/車內緊急開門裝置<br>
+                                功能測試，並確認鉛封完整性。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Top Block - 半年檢工作項目 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="content-box p-3 bg-light-tiffany rounded">
+                            <h3><i class="fas fa-star text-primary"></i> ESS更換乾燥包</h3>
+                            <p>
+                                儲能裝置<br>
+                                更換乾燥包，打開ESS側邊手孔蓋取出舊品更換。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Left Bottom Block - 半年檢工作項目 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="content-box p-3 bg-light-tiffany rounded">
+                            <h3><i class="fas fa-star text-success"></i> 集電弓清潔保養</h3>
+                            <p>
+                                集電系統<br>
+                                1. 檢查和清潔集電弓基座絕緣礙子並清潔集電弓本體。<br><br>
+                                2. 礙子塗抹矽膠增強阻值。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Bottom Block - 半年檢工作項目 -->
+                    <div class="col-md-6 mb-4">
+                        <div class="content-box p-3 bg-light-tiffany rounded">
+                            <h3><i class="fas fa-star text-info"></i> 車內外開門裝置保養</h3>
+                            <p>
+                                緊急開關裝置<br>
+                                1. 拉開拉柄，噴灑潤滑保養劑。<br><br>
+                                2. 使用鋼索潤滑(Interflon Lube TF)噴灑在鋼索上保養，並用乾淨抹布擦拭。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        
+    
+    
+    <footer class="bg-light text-center py-4">
+        <p>新北捷運 <i class="fas fa-train small-icon"></i></p>
+        <p>聯絡我們: <a href="mailto:contact@新北metro.tw">contact@新北metro.tw</a></p>
+    </footer>
+
+    <!-- 引入 Bootstrap JS 和依赖 -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="chui1.js"></script>
+</body>
+</html>
